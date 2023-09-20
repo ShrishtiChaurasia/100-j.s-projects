@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(135deg, rgb(56, 56, 172) , rgb(228, 84, 228));
+}
+.container{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+#card{
+    height: auto;
+    padding: 5px;
+    background: linear-gradient(135deg,rgb(112, 74, 112));
+    border-radius: 10px;
+}
+#weather{
+    padding: 10px;
+}
+#weather div{
+    margin: 5px;
+}
