@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Calculator</title>
+      </head>
+      <body>
+        <div class="container">
+          <!-- contain allover calculator -->
+          <div class="calculator">
+            <!-- contain all values -->
+            <div class="input-field display">
+              <input type="text" name="display" id="display" />
+            </div>
+
+            <!-- contain all buttons -->
+            <div class="buttons gaps">
+              <!-- buttons first row -->
+              <div class="btn-row-first">
+                <input type="button" value="AC" onclick="calculator()" />
+                <input type="button" value="CE" onclick="addToDisplay('0')" />
+                <input type="button" value="0" onclick="addToDisplay('0')" />
+              </div>
+
+              <!-- buttons second row -->
+              <div class="btn-row-second gaps">
+                <input type="button" value="7" onclick="addToDisplay('7')" />
+                <input type="button" value="8" onclick="addToDisplay('8')" />
+                <input type="button" value="9" onclick="addToDisplay('9')" />
+              </div>
+
+              <!-- buttons third row -->
+              <div class="btn-row-third gaps">
+                <input type="button" value="4" onclick="addToDisplay('4')" />
+                <input type="button" value="5" onclick="addToDisplay('5')" />
+                <input type="button" value="6" onclick="addToDisplay('6')" />
+              </div>
+
+              <!-- buttons fourth row -->
+              <div class="btn-row-four gaps">
+                <input type="button" value="1" onclick="addToDisplay('1')" />
+                <input type="button" value="2" onclick="addToDisplay('2')" />
+                <input type="button" value="3" onclick="addToDisplay('3')" />
+              </div>
+
+              <!-- buttons fifth row -->
+              <div class="btn-row-five gaps">
+                <input type="button" value="+" onclick="addToDisplay('+')" />
+                <input type="button" value="-" onclick="addToDisplay('-')" />
+                <input type="button" value="*" onclick="addToDisplay('*')" />
+              </div>
+
+              <!-- buttons sixth row -->
+              <div class="btn-row-six gaps">
+                <input type="button" value="." onclick="addToDisplay('.')" />
+                <input type="button" value="/" onclick="addToDisplay('/')" />
+                <input
+                  type="button"
+                  value="="
+                  class="active"
+                  onclick="calculate()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- adding script file -->
+
+        <script src="calculator.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
