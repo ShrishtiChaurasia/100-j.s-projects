@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,pink,hotpink,blue,grey);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: -5rem;
+}
+
+.leaf{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 50px 0;
+    transform-origin: 100% 0;
+}
+
+.animation{
+    animation: leaf 5s ease;
+}
+
+@keyframes leaf {
+    to{
+        border-radius: 100px 0;
+    }
+}
+
+.trunk{
+    display: flex;
+    height: 250px;
+    width: 5px;
+    margin-top: 0.25rem;
+    margin-left: 6.25rem;
+    background-color: rgb(21, 18, 18);
+    position: absolute;
+    opacity: 0;
+}
