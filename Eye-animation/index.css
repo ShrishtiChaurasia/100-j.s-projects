@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: wheat;
+}
+
+.face-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.face {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(121, 111, 56);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye-cover {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.eye-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(196, 209, 209);
+  overflow: hidden;
+  border: 1px solid black;
+
+}
+.eye-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(206, 214, 214);
+  overflow: hidden;
+  border: 1px solid black;
+
+}
+
+.pupil {
+  background-color: black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
